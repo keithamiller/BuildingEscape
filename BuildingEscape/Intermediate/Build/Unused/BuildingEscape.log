@@ -1,0 +1,31 @@
+﻿  Compiling game modules for hot reload
+  Performing 3 actions (4 in parallel)
+  PositionReporter.cpp
+B:\Programming\Unreal Projects\BuildingEscape\Source\BuildingEscape\PositionReporter.cpp(13): warning C4996: 'UActorComponent::bWantsBeginPlay': bWantsBeginPlay was inconsistently enforced and is now unused. BeginPlay will now always be called for Actor Components. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  B:\Epic Games\UE_4.18\Engine\Source\Runtime\Engine\Classes\Components/ActorComponent.h(211): note: see declaration of 'UActorComponent::bWantsBeginPlay'
+B:\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Logging/LogMacros.h(34): error C2665: 'CheckVA': none of the 11 overloads could convert all the argument types
+  b:\epic games\ue_4.18\engine\source\runtime\core\public\misc\VarArgs.h(87): note: could be 'bool CheckVA(bool)'
+  b:\epic games\ue_4.18\engine\source\runtime\core\public\misc\VarArgs.h(86): note: or       'void *CheckVA(ANSICHAR *)'
+  b:\epic games\ue_4.18\engine\source\runtime\core\public\misc\VarArgs.h(85): note: or       'TCHAR CheckVA(TCHAR)'
+  b:\epic games\ue_4.18\engine\source\runtime\core\public\misc\VarArgs.h(84): note: or       'long CheckVA(unsigned long)'
+  b:\epic games\ue_4.18\engine\source\runtime\core\public\misc\VarArgs.h(83): note: or       'long CheckVA(long)'
+  b:\epic games\ue_4.18\engine\source\runtime\core\public\misc\VarArgs.h(82): note: or       'double CheckVA(double)'
+  b:\epic games\ue_4.18\engine\source\runtime\core\public\misc\VarArgs.h(81): note: or       'int64 CheckVA(int64)'
+  b:\epic games\ue_4.18\engine\source\runtime\core\public\misc\VarArgs.h(80): note: or       'uint64 CheckVA(uint64)'
+  b:\epic games\ue_4.18\engine\source\runtime\core\public\misc\VarArgs.h(79): note: or       'int32 CheckVA(int32)'
+  b:\epic games\ue_4.18\engine\source\runtime\core\public\misc\VarArgs.h(78): note: or       'uint8 CheckVA(uint8)'
+  b:\epic games\ue_4.18\engine\source\runtime\core\public\misc\VarArgs.h(77): note: or       'uint32 CheckVA(uint32)'
+  B:\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Logging/LogMacros.h(34): note: while trying to match the argument list '(FString)'
+  B:\Programming\Unreal Projects\BuildingEscape\Source\BuildingEscape\PositionReporter.cpp(26): note: see reference to function template instantiation 'void FMsg::Logf_Internal<FString>(const ANSICHAR *,int32,const FName &,ELogVerbosity::Type,const TCHAR *,T1)' being compiled
+          with
+          [
+              T1=FString
+          ]
+B:\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Logging/LogMacros.h(34): error C4840: non-portable use of class 'FString' as an argument to a variadic function
+  B:\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Logging/LogMacros.h(34): note: 'FString::FString' is non-trivial
+  B:\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Containers/UnrealString.h(72): note: see declaration of 'FString::FString'
+  B:\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Logging/LogMacros.h(34): note: the constructor and destructor will not be called; a bitwise copy of the class will be passed as the argument
+  B:\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Windows/WindowsCriticalSection.h(9): note: see declaration of 'FString'
+ERROR : UBT error : Failed to produce item: B:\Programming\Unreal Projects\BuildingEscape\Binaries\Win64\UE4Editor-BuildingEscape-9237.dll
+  Total build time: 5.27 seconds (Local executor: 0.00 seconds)
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3075: The command ""B:\Epic Games\UE_4.18\Engine\Build\BatchFiles\Build.bat" BuildingEscapeEditor Win64 Development "B:\Programming\Unreal Projects\BuildingEscape\BuildingEscape.uproject" -waitmutex" exited with code 5. Please verify that you have sufficient rights to run this command.
